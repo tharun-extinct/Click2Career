@@ -23,7 +23,11 @@
         "npx",
         "-y",
         "@upstash/context7-mcp"
-      ]
+      ],
+      "env": {
+        "CONTEXT7_TIMEOUT": "30000",
+        "DEBUG": "*"
+      }
     },
 
     "knowledge-graph-memory": {
