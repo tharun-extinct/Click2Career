@@ -6,18 +6,30 @@
         "-y", 
         "@playwright/mcp@latest", 
         "--browser", "msedge",
-        "--user-data-dir", "C:/Users/tharu/AppData/Local/Microsoft/Edge/User Data"
+        "--user-data-dir", "C:/Users/tharu/AppData/Local/Microsoft/Edge/User Data",
+        "--downloads-path", "X:/AI_and_Automation/Job-Application-automation/downloads",
+        "--screenshot-path", "X:/AI_and_Automation/Job-Application-automation/screenshots"
       ]
     },
     
     "context7": {
       "command": "npx",
-      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+      "args": [
+        "-y", 
+        "@upstash/context7-mcp"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "YOUR_CONTEXT7_API_KEY_HERE",
+        "CONTEXT7_TIMEOUT": "30000",
+        "DEBUG": "*"                                            // '' | '*' | 'context7:*'
+      }
     },
 
     "knowledge-graph-memory": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "args": [
+        "-y", 
+        "@modelcontextprotocol/server-memory"],
       "env": {
         "MEMORY_FILE_PATH": "X:/AI_and_Automation/Job-Application-automation/.vscode/memory.jsonl"
       }
