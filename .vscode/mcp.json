@@ -9,10 +9,18 @@
         "--user-data-dir", "C:/Users/tharu/AppData/Local/Microsoft/Edge/User Data"
       ]
     },
+    
     "context7": {
-      "type": "stdio",
       "command": "npx",
       "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+    },
+
+    "knowledge-graph-memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory"],
+      "env": {
+        "MEMORY_FILE_PATH": "X:/AI_and_Automation/Job-Application-automation/.vscode/memory.jsonl"
+      }
     }
   }
 }
