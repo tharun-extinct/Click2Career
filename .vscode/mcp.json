@@ -8,6 +8,9 @@
         "--browser", "msedge",
         "--user-data-dir", "C:/Users/tharu/AppData/Local/Microsoft/Edge/User Data"
       ]
+    },
+    "context7": {
+      "command": "context7-mcp"
     }
   }
 }
