@@ -7,8 +7,8 @@
         "@playwright/mcp@latest", 
         "--browser", "msedge",
         "--user-data-dir", "C:/Users/tharu/AppData/Local/Microsoft/Edge/User Data",
-        "--downloads-path", "X:/AI_and_Automation/Job-Application-automation/downloads",
-        "--screenshot-path", "X:/AI_and_Automation/Job-Application-automation/screenshots"
+        "--output-dir",
+        "X:/AI_and_Automation/Click2Career/assets/playwright"
       ]
     },
     
@@ -19,7 +19,7 @@
         "@upstash/context7-mcp"
       ],
       "env": {
-        "CONTEXT7_API_KEY": "YOUR_CONTEXT7_API_KEY_HERE",
+        "CONTEXT7_API_KEY": "YOUR_API_KEY",
         "CONTEXT7_TIMEOUT": "30000",
         "DEBUG": "*"                                            // '' | '*' | 'context7:*'
       }
@@ -33,6 +33,23 @@
       "env": {
         "MEMORY_FILE_PATH": "X:/AI_and_Automation/Job-Application-automation/.vscode/memory.jsonl"
       }
+    },
+
+    "google-workspace": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "mcp-server-google-workspace"
+      ]
+    },
+    
+    "rube": {
+      "command": "mcp-remote",
+      "args": ["https://rube.app/mcp"]
     }
   }
 }
