@@ -15,14 +15,15 @@
     "context7": {
       "command": "npx",
       "args": [
-        "-y", 
+        "-y",
+        "dotenv-cli",
+        "-e",
+        ".env",
+        "--",
+        "npx",
+        "-y",
         "@upstash/context7-mcp"
-      ],
-      "env": {
-        "CONTEXT7_API_KEY": "YOUR_API_KEY",
-        "CONTEXT7_TIMEOUT": "30000",
-        "DEBUG": "*"                                            // '' | '*' | 'context7:*'
-      }
+      ]
     },
 
     "knowledge-graph-memory": {
