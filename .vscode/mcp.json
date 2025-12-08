@@ -10,11 +10,9 @@
       ]
     },
     "context7": {
-        "type": "http",
-        "url": "https://mcp.context7.com/mcp",
-        "headers": {
-          "CONTEXT7_API_KEY": "https://context7.com/api/v2"
-        }
-      }
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp", "--api-key", "YOUR_API_KEY"]
+    }
   }
 }
