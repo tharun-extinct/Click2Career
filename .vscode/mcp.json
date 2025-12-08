@@ -41,15 +41,14 @@
     },
 
     "google-workspace": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "dotenv-cli",
-        "-e",
-        ".env",
-        "--",
-        "mcp-server-google-workspace"
-      ]
+      "command": "mcp-server-google-workspace",
+      "args": [],
+      "env": {
+        "GOOGLE_CLIENT_ID": "YOUR_GOOGLE_CLIENT_ID",
+        "GOOGLE_CLIENT_SECRET": "YOUR_GOOGLE_CLIENT_SECRET",
+        "GOOGLE_REFRESH_TOKEN": "YOUR_GOOGLE_REFRESH_TOKEN",
+        "GOOGLE_ACCESS_TOKEN": ""                                         // optional
+      }
     },
     
     "rube": {
