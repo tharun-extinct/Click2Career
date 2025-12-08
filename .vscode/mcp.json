@@ -10,7 +10,11 @@
       ]
     },
     "context7": {
-      "command": "context7-mcp"
-    }
+        "type": "http",
+        "url": "https://mcp.context7.com/mcp",
+        "headers": {
+          "CONTEXT7_API_KEY": "https://context7.com/api/v2"
+        }
+      }
   }
 }
