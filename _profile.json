@@ -1,0 +1,58 @@
+{
+  "personal_info": {
+    "first_name": "",
+    "last_name": "",
+    "full_name": "",
+    "email": "",
+    "country_code": "",
+    "phone": "",
+    "date_of_birth": "",
+    "gender": "",
+    "nationality": "",
+    "current_location": "",
+    "address": {
+      "street": "",
+      "city": "",
+      "state": "",
+      "postal_code": "",
+      "country": ""
+    }
+  },
+  "professional_info": {
+    "linkedin_url": "",
+    "github_url": "",
+    "portfolio_url": "",
+    "current_job_title": "",
+    "years_of_experience": 0,
+    "expected_salary": "",
+    "notice_period": "",
+    "willing_to_relocate": false
+  },
+  "education": [
+    {
+      "degree": "",
+      "field_of_study": "",
+      "institution": "",
+      "graduation_year": "",
+      "cgpa": ""
+    }
+  ],
+  "skills": {
+    "primary": [],
+    "secondary": [],
+    "languages": []
+  },
+  "files": {
+    "resume_path": "",
+    "cover_letter_path": "",
+    "photo_path": "",
+    "proofs_folder": ""
+  },
+  "default_answers": {
+    "authorized_to_work": false,
+    "require_sponsorship": false,
+    "willing_to_travel": false,
+    "available_start_date": "",
+    "hear_about_us": ""
+  }
+}
