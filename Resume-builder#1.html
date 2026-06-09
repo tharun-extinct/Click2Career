@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharun Kumar - Resume</title>
+    <style>
+        /* Base Styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 40px 20px;
+        }
+        
+        /* App UI elements */
+        .app-controls {
+            max-width: 850px;
+            margin: 0 auto 20px auto;
+            text-align: right;
+        }
+        .download-btn {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #003d82;
+        }
+
+        /* Resume Document Setup */
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        /* Typography & Layout */
+        h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+        h2 {
+            font-size: 16px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            color: #000;
+        }
+        h3 {
+            font-size: 15px;
+            color: #222;
+        }
+        
+        .contact-info {
+            font-size: 14px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        
+        .section-content {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .experience-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+        
+        .date-location {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .tech-stack {
+            font-size: 13px;
+            font-weight: bold;
+            color: #444;
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Print Settings to ensure perfect PDF generation */
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .app-controls {
+                display: none; /* Hides the button in the PDF */
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+                max-width: 100%;
+            }
+            a {
+                color: #000;
+                text-decoration: none;
+            }
+            @page {
+                margin: 0.75in;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-controls">
+        <button class="download-btn" onclick="window.print()">Download as PDF</button>
+    </div>
+
+    <div class="resume-container">
+        
+        <header>
+            <h1>Tharun Kumar</h1>
+            <div class="contact-info">
+                Chennai, Tamil Nadu, India | +91 86081 22561 | tharunkumar7041@gmail.com <br>
+                <a href="https://www.linkedin.com/in/tharun-extinct/" target="_blank">linkedin.com/in/tharun-extinct</a> | 
+                <a href="https://github.com/tharun-extinct" target="_blank">github.com/tharun-extinct</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <div class="section-content">
+                Results-driven Software Developer with a strong foundation in full-stack engineering, cloud infrastructure, and data science. Experienced in building scalable web applications using Java (Spring Boot), React, and cloud deployments. Passionate about leveraging clean code and modern frameworks to solve real-world problems and optimize digital experiences.
+            </div>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            
+            <div class="experience-block">
+                <div class="experience-header">
+                    <h3>Programmer Analyst Trainee</h3>
+                    <span class="date-location">Chennai, India | Present</span>
+                </div>
+                <div class="tech-stack">Focus: E-commerce Domain | Full-Stack Development</div>
+                <ul>
+                    <li>Develop and optimize enterprise-level e-commerce solutions utilizing Java, Spring Boot, and React.</li>
+                    <li>Manage relational database operations with SQL to ensure data integrity and fast retrieval times.</li>
+                    <li>Serve as Cohort Representative, facilitating technical communication between engineering trainees and senior architectural leadership.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <div class="experience-header">
+                    <h3>Cyber Security Intern</h3>
+                    <span class="date-location">Smart Knower | Jan 2023 - Feb 2023</span>
+                </div>
+                <ul>
+                    <li>Implemented foundational network security protocols across Windows and Linux environments.</li>
+                    <li>Conducted basic vulnerability assessments, including testing brute-force penetration methodologies to identify system weaknesses.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Projects</h2>
+
+            <div class="experience-block">
+                <div class="project-header">
+                    <h3>Fresh Greens</h3>
+                    <a href="https://github.com/tharun-extinct" class="date-location">View on GitHub</a>
+                </div>
+                <div class="tech-stack">Tech Stack: React, Node.js, Google Cloud Platform (GCP)</div>
+                <ul>
+                    <li>Designed and deployed a full-stack e-commerce platform dedicated to organic produce.</li>
+                    <li>Architected the cloud infrastructure on GCP to ensure high availability and scalable performance during peak traffic.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <div class="project-header">
+                    <h3>Insure Assist</h3>
+                    <a href="https://github.com/tharun-extinct" class="date-location">View on GitHub</a>
+                </div>
+                <div class="tech-stack">Tech Stack: Django, LangChain, GROQ API, Azure, MySQL</div>
+                <ul>
+                    <li>Built an AI-driven web application capable of dynamically answering user inquiries regarding insurance policies.</li>
+                    <li>Automated the analysis of claim denials using Generative AI, reducing manual review time.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <div class="project-header">
+                    <h3>Skin Disease Prediction</h3>
+                    <a href="https://github.com/tharun-extinct" class="date-location">View on GitHub</a>
+                </div>
+                <div class="tech-stack">Tech Stack: Python, TensorFlow, Keras, Pandas, Matplotlib</div>
+                <ul>
+                    <li>Trained a robust machine learning model on a dataset of 10,000+ medical images to accurately classify various skin conditions.</li>
+                    <li>Utilized data visualization libraries to evaluate model accuracy and minimize false positives.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="experience-header">
+                <h3>B.Tech in Artificial Intelligence and Data Science</h3>
+                <span class="date-location">2021 - 2025</span>
+            </div>
+            <div class="section-content">
+                R.M.K. College of Engineering and Technology | CGPA: 7.74
+            </div>
+        </section>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <strong>Languages:</strong> Java, Python, TypeScript, JavaScript, SQL, C, HTML5, CSS3
+                </div>
+                <div>
+                    <strong>Frameworks & Tools:</strong> React, Spring Boot, Django, Firebase, Docker, GitHub Actions, PowerBI
+                </div>
+                <div>
+                    <strong>Cloud Platforms:</strong> Google Cloud Platform (GCP), Microsoft Azure
+                </div>
+                <div>
+                    <strong>Methodologies:</strong> Agile/Scrum, Version Control (Git)
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

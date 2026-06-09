@@ -1,0 +1,41 @@
+I have attached my Resume, everytime I prompt with Job description update the Resume for that specific Job title and the company. Build a web app using HTML, CSS, JS where I can able to download it as PDF
+
+Note:
+- Avoid complex jargons while writing description for the Profile, Project, Work Experience
+
+- The Resume should be ATS friendly
+
+- Get the project related Information from the provided Github link
+
+- Always make sure work experience section is up-to-date (Use LinkedIn Profile link)
+
+- Content of the Resume should fit perfectly (A4 dimensions)
+
+
+LinkedIn - https://www.linkedin.com/in/tharun-extinct/
+Github - https://github.com/tharun-extinct
+
+
+---
+
+
+My best projects:
+SPARK, portfolio-v2-space, INSURE-ASSIST, Fresh-Greens, HedgeX-V5, Edge_Optimizer_V2
+
+(I have sorted them based on Commits)
+
+---
+
+
+The content in the attached resume might not be relevant (or good enough) for the professional resume, so tweak it accordingly
+
+
+- Do not make any Layout or Design changes, Strictly follow Layout in the provided PDF format
+
+- Hyperlinks should be opened in New tabs
+
+- Do not quote any citations from the resources in the resume
+
+
+
+

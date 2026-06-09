@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tharun_Kumar_Resume</title>
+    <style>
+        /* Base Styles & Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.5;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        /* App UI elements */
+        .app-controls {
+            width: 210mm; /* Matches A4 container width */
+            margin: 0 auto 20px auto;
+            text-align: right;
+        }
+        .download-btn {
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #003d82;
+        }
+
+        /* Strict A4 Page Container Dimensions */
+        .resume-container {
+            width: 210mm;
+            min-height: 297mm;
+            background: #fff;
+            padding: 20mm; /* Professional margin setup */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-sizing: border-box;
+        }
+
+        /* Typography & Layout */
+        h1 {
+            font-size: 26px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+        h2 {
+            font-size: 15px;
+            text-transform: uppercase;
+            border-bottom: 2px solid #000;
+            padding-bottom: 3px;
+            margin-top: 18px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+        h3 {
+            font-size: 14px;
+            color: #222;
+        }
+        
+        .contact-info {
+            font-size: 13px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .contact-info a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+        
+        .section-content {
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        
+        .experience-block {
+            margin-bottom: 12px;
+        }
+        
+        .experience-header, .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+        
+        .date-location {
+            font-size: 12px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .tech-stack {
+            font-size: 12px;
+            font-weight: bold;
+            color: #444;
+            margin-top: 2px;
+            margin-bottom: 6px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+        li {
+            font-size: 13px;
+            margin-bottom: 3px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 15px;
+        }
+
+        .skills-grid div {
+            font-size: 13px;
+        }
+
+        /* Content Editable Mode Indicator styling */
+        .resume-container[contenteditable="true"]:hover {
+            outline: 1px dashed #0056b3;
+        }
+
+        /* Print Media Query for native Save to PDF */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0; /* Let the container padding handle margins */
+            }
+            body {
+                background-color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                padding: 0;
+                margin: 0;
+            }
+            .app-controls {
+                display: none !important;
+            }
+            .resume-container {
+                box-shadow: none;
+                margin: 0;
+                width: 210mm;
+                min-height: 297mm;
+                padding: 20mm;
+                contenteditable: false !important;
+            }
+            a {
+                text-decoration: underline !important;
+                color: #0056b3 !important;
+            }
+            /* Prevents browsers from adding extra headers/footers */
+            @page {
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="app-controls">
+        <button class="download-btn" onclick="downloadA4PDF()">Export to PDF</button>
+        <div style="font-size: 11px; color: #666; margin-top: 5px;">
+            (Select "Save as PDF" destination for clickable links)
+        </div>
+    </div>
+
+    <div class="resume-container" id="resume-document" contenteditable="true">
+        
+        <header>
+            <h1>Tharun Kumar</h1>
+            <div class="contact-info">
+                Chennai, Tamil Nadu, India | +91 86081 22561 | tharunkumar7041@gmail.com <br>
+                <a href="https://www.linkedin.com/in/tharun-extinct/" target="_blank" rel="noopener">linkedin.com/in/tharun-extinct</a> | 
+                <a href="https://github.com/tharun-extinct" target="_blank" rel="noopener">github.com/tharun-extinct</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>Professional Summary</h2>
+            <div class="section-content">
+                Results-driven Software Developer specializing in full-stack engineering, cloud infrastructure, and data science. Experienced in designing and implementing modular e-commerce web features, automating deployment architectures, and integrating generative AI tools into production pipelines. Adept at balancing client-centric application development with robust engineering practices.
+            </div>
+        </section>
+
+        <section>
+            <h2>Work Experience</h2>
+            
+            <div class="experience-block">
+                <div class="experience-header">
+                    <h3>Programmer Analyst Trainee</h3>
+                    <span class="date-location">Chennai, India | Present</span>
+                </div>
+                <div class="tech-stack">Focus: E-commerce Domain | Full-Stack Development</div>
+                <ul>
+                    <li>Develop components and backend services for web platforms using Java, Spring Boot, and React framework architectures.</li>
+                    <li>Optimize query logic and maintain data structures across enterprise SQL database management solutions.</li>
+                    <li>Coordinate technical tasks and requirements updates across team cohorts alongside project supervisors.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <div class="experience-header">
+                    <h3>Cyber Security Intern</h3>
+                    <span class="date-location">Smart Knower | Jan 2023 - Feb 2023 </span>
+                </div>
+                <ul>
+                    <li>Configured baseline operational security rules across Linux and Windows server environments.</li>
+                    <li>Analyzed application threat models using brute-force checking scenarios to uncover authentication gaps.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Key Projects</h2>
+
+            <div class="experience-block">
+                <div class="project-header">
+                    <h3>SPARK | Multi-Tier Web Application</h3>
+                    <a href="https://github.com/tharun-extinct" class="date-location">View on GitHub</a>
+                </div>
+                <div class="tech-stack">Tech Stack: Java, Spring Boot, React, REST APIs</div>
+                <ul>
+                    <li>Built a fast, component-driven web platform utilizing React for interfaces and microservices to process application flows.</li>
+                    <li>Designed isolated data entities to maintain modular component design and clear logical separation of application states.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <div class="project-header">
+                    <h3>Fresh Greens | Cloud-Deployed E-Commerce</h3>
+                    <a href="https://github.com/tharun-extinct" class="date-location">View on GitHub</a>
+                </div>
+                <div class="tech-stack">Tech Stack: HTML5, CSS3, JavaScript, Google Cloud Platform (GCP)</div>
+                <ul>
+                    <li>Architected and finalized a localized web layout focused on managing catalog inventories and online product listings.</li>
+                    <li>Configured safe storage access rules and container definitions using modern infrastructure host tools.</li>
+                </ul>
+            </div>
+
+            <div class="experience-block">
+                <div class="project-header">
+                    <h3>Insure Assist | Generative AI Portal</h3>
+                    <a href="https://github.com/tharun-extinct" class="date-location">View on GitHub</a>
+                </div>
+                <div class="tech-stack">Tech Stack: Django, LangChain, GROQ API, Azure, MySQL</div>
+                <ul>
+                    <li>Created an operational support web engine targeting complex insurance coverage evaluations.</li>
+                    <li>Connected intelligent agent chains to target document storage, minimizing standard client wait times.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div class="experience-header">
+                <h3>B.Tech in Artificial Intelligence and Data Science</h3>
+                <span class="date-location">2021 - 2025</span>
+            </div>
+            <div class="section-content">
+                R.M.K. College of Engineering and Technology | CGPA: 7.74
+            </div>
+        </section>
+
+        <br><br><br><br>
+
+        <section>
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div>
+                    <strong>Languages:</strong> Java, Python, TypeScript, JavaScript, SQL, C, HTML5, CSS3
+                </div>
+                <div>
+                    <strong>Frameworks & Tools:</strong> React, Spring Boot, Django, Firebase, Docker, PowerBI
+                </div>
+                <div>
+                    <strong>Cloud Platforms:</strong> Google Cloud Platform (GCP), Microsoft Azure 
+                </div>
+                <div>
+                    <strong>Methodologies:</strong> Agile/Scrum, Git Version Control
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        function downloadA4PDF() {
+            const element = document.getElementById('resume-document');
+            const originalTitle = document.title;
+
+            // 1. Set the default filename for the PDF
+            document.title = "Tharun_Kumar_Resume"; 
+
+            // 2. Temporarily disable editing and UI markers
+            element.removeAttribute('contenteditable');
+            
+            // 3. Trigger print dialog
+            // IMPORTANT: Instruct the user to select "Save as PDF" (Native) 
+            // NOT "Microsoft Print to PDF" (which flattens).
+            window.print();
+            
+            // 4. Restore state
+            element.setAttribute('contenteditable', 'true');
+            document.title = originalTitle;
+        }
+    </script>
+</body>
+</html>
