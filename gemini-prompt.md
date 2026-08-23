@@ -10,7 +10,7 @@ Whenever the user provides a Job Description, update the contents of the attache
 Use the following links to extract accurate, up-to-date background information:
 - **LinkedIn Profile** (for Work Experience & Profile Summary): [https://www.linkedin.com/in/tharun-extinct/](https://www.linkedin.com/in/tharun-extinct/)
 - **GitHub Profile** (for Project facts & metrics): [https://github.com/tharun-extinct](https://github.com/tharun-extinct)
-- **Top Projects to Highlight** (prioritized by commit history): `SPARK`, `portfolio-v2-space`, `INSURE-ASSIST`, `Fresh-Greens`, `HedgeX-V5`, `Edge_Optimizer_V2`
+- **Top Projects to Highlight** (prioritized by commit history): `SPARK`, `INSURE-ASSIST`, `Fresh-Greens`, `Edge_Optimizer`
 
 ## Strict Guidelines & Constraints
 
